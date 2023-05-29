@@ -19,7 +19,9 @@ class ActorViewModel(private val repository: ActorRepository) : ViewModel() {
     suspend fun getAllActors() = repository.getAll()
 
     // TODO: Implement functions to validate data and save actors in the DB
-    fun createActor(actor: ActorModel) {
+    fun createActor() {
+        val actor = ActorModel(name.value!!)
+        name.value=""
         viewModelScope.launch {
             repository.addActor(actor)
         }
