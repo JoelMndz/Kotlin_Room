@@ -9,13 +9,11 @@ import com.example.laboratorio05.data.model.MovieWithActor
 
 @Dao
 interface ActorDao {
-    // TODO: create getAllActors method
     @Query("SELECT * FROM actor_table")
     suspend fun getAllActor(): List<ActorModel>
 
-    // TODO: create insertActor method
     @Transaction
     @Insert
-    fun insertActor(movie: ActorModel)
+    suspend fun insertActor(movie: ActorModel)
 
 }

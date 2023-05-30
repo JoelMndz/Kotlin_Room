@@ -13,7 +13,6 @@ import com.example.laboratorio05.data.model.MovieModel
 
 @Database(entities = [MovieModel::class, ActorModel::class, CastModel::class], version = 1)
 abstract class MovieReviewerDatabase : RoomDatabase(){
-    // TODO: complete MovieReviewerDatabase abstract class
     abstract fun movieDao(): MovieDao
     abstract fun actorDao(): ActorDao
     abstract fun castDao(): CastDao

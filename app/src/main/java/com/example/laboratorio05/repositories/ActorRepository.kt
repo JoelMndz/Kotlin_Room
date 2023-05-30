@@ -4,7 +4,6 @@ import com.example.laboratorio05.data.dao.ActorDao
 import com.example.laboratorio05.data.model.ActorModel
 
 class ActorRepository(private val actorDao: ActorDao) {
-    // TODO: complete Actor ActorRepository
     suspend fun getAll() = actorDao.getAllActor()
 
     suspend fun addActor(actor:ActorModel) = actorDao.insertActor(actor)

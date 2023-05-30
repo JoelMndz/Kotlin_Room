@@ -61,7 +61,6 @@ class NewCastingFragment : Fragment() {
     }
 
     private suspend fun getMoviesAndLaunchSpinner() {
-        // TODO: uncomment
         setMoviesSpinner(moviesViewModel.getMovies())
     }
 
@@ -83,7 +82,6 @@ class NewCastingFragment : Fragment() {
     }
 
     private suspend fun getActorsAndLaunchSpinner() {
-        // TODO: uncomment
         setActorsSpinner(actorsViewModel.getAllActors())
     }
 

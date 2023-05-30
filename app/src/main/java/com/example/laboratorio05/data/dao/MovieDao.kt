@@ -9,11 +9,9 @@ import com.example.laboratorio05.data.model.MovieWithActor
 
 @Dao
 interface MovieDao {
-    // TODO: create getAllActors method
     @Query("SELECT * FROM movie_table")
     suspend fun getAllMovie(): List<MovieModel>
 
-    // TODO: create insertActor method
     @Transaction
     @Insert
     suspend fun insertMovie(movie: MovieModel)

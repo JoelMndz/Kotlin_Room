@@ -18,7 +18,6 @@ data class MovieModel (
     val qualification: String,
 )
 {
-    // TODO: add constructor
     constructor(name: String, description: String, category: String, qualification: String):
             this(0,name,category,description,qualification)
 }

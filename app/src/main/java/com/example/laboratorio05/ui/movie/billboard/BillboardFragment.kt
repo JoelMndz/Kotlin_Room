@@ -75,7 +75,6 @@ class BillboardFragment : Fragment() {
         displayMovies()
     }
     private suspend fun displayMovies() {
-        // TODO: uncomment
         adapter.setData(movieViewModel.getMovies())
         adapter.notifyDataSetChanged()
     }

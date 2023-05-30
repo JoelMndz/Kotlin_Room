@@ -7,7 +7,6 @@ import com.example.laboratorio05.data.model.CastModel
 
 @Dao
 interface CastDao {
-    // TODO: Create insert casting method
     @Insert(onConflict = OnConflictStrategy.IGNORE)
     suspend fun insert(casting: CastModel)
 }
